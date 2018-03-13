@@ -16,10 +16,12 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.yellow
     }
 
+    @IBOutlet weak var lb: UILabel!
     @IBAction func pressed(_ sender: UIButton) {
         count = count + 1
-        print("\(count)button pressed!!")
         
+        print("\(count)button pressed!!")
+        lb.text = "\(count)button pressed!!"
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
